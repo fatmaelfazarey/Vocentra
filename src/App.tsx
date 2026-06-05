@@ -9,23 +9,26 @@ function App() {
   return (
 
     <>
-      <Suspense fallback={<LoadingPage/>}>
-        <Routes>
-          {routes.map((route, index) => {
-            if (route.children) {
-              return (
-                <Route key={index} element={route.element}>
-                  {route.children.map((child, idx) => (
-                    <Route key={idx} path={child.path} element={child.element} index={child.index} />
-                  ))}
-                </Route>
-              );
-            }
-            return <Route key={index} path={route.path} element={route.element} />;
-          })}
-        </Routes>
+      <div className="">
+        <Suspense fallback={<LoadingPage />}>
+          <Routes>
+            {routes.map((route, index) => {
+              if (route.children) {
+                return (
+                  <Route key={index} element={route.element}>
+                    {route.children.map((child, idx) => (
+                      <Route key={idx} path={child.path} element={child.element} index={child.index} />
+                    ))}
+                  </Route>
+                );
+              }
+              return <Route key={index} path={route.path} element={route.element} />;
+            })}
+          </Routes>
 
-      </Suspense>
+        </Suspense>
+      </div>
+
     </>
   )
 }

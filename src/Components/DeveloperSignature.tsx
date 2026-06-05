@@ -4,10 +4,10 @@ import Icon from './MY-UI/Icon';
 const DeveloperSignature = () => {
     const DeveloperSocialMedia = [
         { icon: FaFacebookF, link: "#" },
-        { icon: FaLinkedinIn, link: "#" },
-        { icon: FaGithub, link: "#" },
-        { icon: FaGoogle, link: "#" },
-        { icon: FaWhatsapp, link: "#" },
+        { icon: FaLinkedinIn, link: "https://www.linkedin.com/in/fatma-mohamed58/" },
+        { icon: FaGithub, link: "https://github.com/fatmaelfazarey" },
+        { icon: FaGoogle, link: "fatmamohamed58001@gmail.com" },
+        { icon: FaWhatsapp, link: "+201156267730" },
         { icon: FaInstagram, link: "#" },
         { icon: FaTwitter, link: "#" },
     ]
