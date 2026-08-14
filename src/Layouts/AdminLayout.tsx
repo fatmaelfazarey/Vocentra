@@ -14,7 +14,7 @@ export default function AdminLayout() {
 
             <div className='flex flex-row' >
                 <AdminSidebar items={items} />
-                <div>
+                <div className='flex-1'>
                     <Outlet />
                 </div>
             </div>

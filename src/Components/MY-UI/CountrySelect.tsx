@@ -18,8 +18,13 @@ const CountrySelect = () => {
 
     const fetchCountry = async () => {
         try {
-            const url = `https://restcountries.com/v3.1/all?fields=name,flags`;
-            const res = await fetch(url);
+            // const url = `https://restcountries.com/v3.1/all?fields=name,flags`;
+            const url = "https://restcountries.com/v3.1/all";
+            // const res = await fetch(url);
+            const res = await fetch(
+                'https://api.restcountries.com/countries/v5',
+                { headers: { 'Authorization': 'Bearer rc_live_f5beea2e80464a9e841ba65efd7a0e95' } }
+            );
 
             if (!res.ok) {
                 throw new Error("Failed to fetch countries");

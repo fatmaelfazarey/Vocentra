@@ -1,9 +1,10 @@
 import React from 'react'
+import JobsList from '../Components/Pages/Job Management/JobsList'
 
 const JobManagement = () => {
     return (
         <div>
-            jobs
+            <JobsList />
         </div>
     )
 }
